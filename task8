@@ -1,0 +1,9 @@
+Console.Write("Введите число:");
+int number = int.Parse(Console.ReadLine()!);
+int number2 = 1;
+int num = number%2;
+while (number > number2)
+{
+    Console.WriteLine($"{num}");
+    number--;
+}

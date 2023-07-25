@@ -1,0 +1,8 @@
+Console.Write("Введите число:");
+int number = int.Parse(Console.ReadLine()!)
+int num = number%2;
+if (num == 0)
+{
+    Console.WriteLine($"{number} чётное число");
+}
+else  Console.WriteLine($"{number} нечётное число");
