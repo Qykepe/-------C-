@@ -1,0 +1,11 @@
+Console.Write("Введите цифру обозначающую день недели:");
+int number = int.Parse(Console.ReadLine());
+if (number >= 1 && number < 6){
+    Console.WriteLine("Это невыходной день");
+}
+if (number == 6 || number == 7){
+    Console.WriteLine("Это выходной день");
+}
+if (number <1 || number > 7){
+    Console.WriteLine("Число не входит в нужный диапазон");
+}

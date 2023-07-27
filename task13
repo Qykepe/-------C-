@@ -1,0 +1,8 @@
+int num = new Random().Next(100000);
+string NumStr = num.ToString();
+if (NumStr.Length < 3){
+    Console.WriteLine($"Третьей цифры нет в числе {num}");
+}
+else{
+    Console.WriteLine($"{NumStr[3]} - третья цифра в числе {num}");
+}
