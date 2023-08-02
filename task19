@@ -1,0 +1,17 @@
+Console.Write("Введите пятизначное число:");
+int number = int.Parse(Console.ReadLine());
+string NumStr = number.ToString();
+if (NumStr.Length == 5)
+{
+    if (NumStr[0] == NumStr[4] && NumStr[1] == NumStr[3])
+    {
+    Console.WriteLine("Это пятизначное число полиндром");
+    }
+    else
+    {
+        Console.WriteLine("Это пятизначное число не полиндром");
+    }
+}
+else{
+    Console.WriteLine("Это не пятизначное число");
+}

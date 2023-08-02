@@ -1,4 +1,4 @@
-﻿Console.Write("Введите число N:");
+Console.Write("Введите число N:");
 int number = int.Parse(Console.ReadLine()!);
 int index = 1;
 while (index <= number){
