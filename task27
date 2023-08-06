@@ -1,0 +1,14 @@
+Console.Write("Введите число:");
+int A = Convert.ToInt32(Console.ReadLine()!);
+int sum = 0;
+Console.WriteLine($"Сумма чисел в число {A} равна {MyMethod(sum)}");
+
+int MyMethod(int sum){
+    while (A > 0)
+    {
+        int number = A % 10;
+        A = A/10;
+        sum = sum + number;
+    }
+    return sum;
+}
