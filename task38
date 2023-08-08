@@ -1,0 +1,25 @@
+int[] array = GetArray(5, 1, 10);
+Console.WriteLine($"[{String.Join(";",array)}]");
+int Min = array[0];
+int Max = array[0];
+for (int i = 0; i < array.Length; i++){
+if (array[i] > Max){
+Max = array[i];
+i++;
+}
+if (array[i] < Min){
+Min = array[i];
+i++;
+}
+}
+Console.WriteLine($"Разница между максимальным и минимальным элементов массива = {Max - Min}");
+
+
+//Метод
+int[] GetArray(int size, int MinValue, int MaxValue){
+    int[] result = new int[size];
+    for (int i = 0; i < size; i++){
+        result[i] = new Random().Next(MinValue, MaxValue);
+    }
+    return result;
+}
