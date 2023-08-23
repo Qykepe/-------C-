@@ -1,0 +1,11 @@
+Console.Write("Введите числа через точку с запятой: ");
+int[] GetArray = Array.ConvertAll(Console.ReadLine()!.Split(";"), int.Parse);
+int count = 0;
+for (int i = 0; i < GetArray.Length; i++){
+    if (GetArray[i] > 0)
+    {
+        count++;
+    }
+}
+ 
+Console.WriteLine($"Количество чисел больше 0 = {count}");
