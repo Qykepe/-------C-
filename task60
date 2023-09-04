@@ -1,0 +1,26 @@
+int[,,] array = new int[2,2,2];
+
+GetArray(array);
+PrintArray(array);
+
+void GetArray(int[,,] arr){
+    int step = 5;
+    for (int i = 0; i < arr.GetLength(0); i++){
+        for (int j = 0; j < arr.GetLength(1); j++){
+            for (int k = 0; k < arr.GetLength(2); k++){
+                array[i,j,k] += step;
+                step += 2;
+            }
+        }
+    }
+}
+
+void PrintArray(int[,,] array){
+    for (int i = 0; i < array.GetLength(0); i++){
+        for (int j = 0; j < array.GetLength(1); j++){
+            for (int k = 0; k < array.GetLength(2); k++){
+                Console.WriteLine($"{array[i, j, k]}({i},{j},{k}) ");
+            }
+        }
+    }
+}
