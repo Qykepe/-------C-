@@ -1,0 +1,9 @@
+Console.WriteLine("Ввелите число N:");
+int N = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine(Numbers(N,1));
+
+string Numbers(int beta, int gama){
+    if(beta == gama) return gama.ToString();
+    return (beta +", "+ Numbers(beta - 1, gama)); 
+}

@@ -1,0 +1,12 @@
+Console.WriteLine("Ввелите число N:");
+int N = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine("Ввелите число M:");
+int M = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine(SumMethod(N,M));
+
+int SumMethod(int N, int M){
+    if(N == M) return M;
+    return (N + SumMethod(N + 1, M));
+}
